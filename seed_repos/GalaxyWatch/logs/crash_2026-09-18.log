@@ -1,0 +1,6 @@
+--- GalaxyWatch diagnostic report ---
+timestamp: 2026-09-18T08:41:23Z
+component: connector.WatchConnector
+severity: warning
+condition: phone_sync_unavailable
+impact: repeated reconnect attempts increased battery consumption

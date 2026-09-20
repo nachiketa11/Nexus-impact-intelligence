@@ -1,0 +1,6 @@
+2026-09-18T08:41:12Z ERROR BluetoothManager wait_for_connection
+device=GalaxyWatch-7 expected_timeout_ms=5000 actual_timeout_ms=5
+message=Bluetooth connection timed out before adapter event arrived
+
+2026-09-18T08:41:13Z WARN SyncService device=GalaxyWatch-7 state=not_started
+message=Watch sync was not started after Bluetooth timeout

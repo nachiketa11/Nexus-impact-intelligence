@@ -14,6 +14,24 @@ Nexus-impact-intelligence/
 ├── presentation/
 ├── rag/
 ├── seed_repos/
+│   ├── GalaxyPhone/
+│   │   ├── bluetooth/
+│   │   ├── docs/
+│   │   ├── logs/
+│   │   ├── sync/
+│   │   └── tests/
+│   ├── GalaxyWatch/
+│   │   ├── connector/
+│   │   ├── docs/
+│   │   ├── logs/
+│   │   ├── power/
+│   │   └── tests/
+│   └── SmartThings/
+│       ├── automation/
+│       ├── bridge/
+│       ├── docs/
+│       ├── logs/
+│       └── tests/
 └── tests/
 ```
 
@@ -27,7 +45,7 @@ Nexus-impact-intelligence/
 | `parser` | Repository, source, and document parsing |
 | `graph` | Knowledge graph modeling and operations |
 | `rag` | Retrieval, indexing, and generation workflows |
-| `seed_repos` | Seed repositories and representative input data |
+| `seed_repos` | Simulated Samsung repositories and representative input data |
 | `tests` | Automated tests across project components |
 | `docs` | Project documentation and handover material |
 | `presentation` | Presentation assets and demonstrations |

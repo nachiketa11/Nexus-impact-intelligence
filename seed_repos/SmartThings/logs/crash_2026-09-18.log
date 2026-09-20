@@ -1,0 +1,6 @@
+--- SmartThings diagnostic report ---
+timestamp: 2026-09-18T08:41:24Z
+component: automation.RuleEngine
+severity: recoverable
+condition: dependent device bridge unavailable
+impact: arrival scene was not published

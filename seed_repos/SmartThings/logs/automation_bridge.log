@@ -1,0 +1,5 @@
+2026-09-18T08:41:24Z INFO DeviceBridge phone=GalaxyPhone watch=GalaxyWatch
+phone_synced=false watch_connected=false ecosystem_ready=false
+
+2026-09-18T08:41:24Z WARN RuleEngine rule=arrival action=skipped
+message=Shared ecosystem state was not ready

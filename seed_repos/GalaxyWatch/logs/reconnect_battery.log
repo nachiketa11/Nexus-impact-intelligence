@@ -1,0 +1,8 @@
+2026-09-18T08:41:13Z WARN WatchConnector phone=GalaxyPhone reconnect_attempt=1
+message=Phone sync unavailable after Bluetooth timeout
+
+2026-09-18T08:41:18Z WARN WatchConnector phone=GalaxyPhone reconnect_attempt=2
+message=Retrying phone synchronization
+
+2026-09-18T08:41:23Z INFO PowerMonitor battery_before=78.0 battery_after=77.0
+reconnect_attempts=2 message=Battery drain attributed to reconnect loop

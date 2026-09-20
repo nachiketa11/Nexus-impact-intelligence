@@ -1,0 +1,8 @@
+--- GalaxyPhone crash report ---
+timestamp: 2026-09-18T08:41:12Z
+component: bluetooth.BluetoothManager
+severity: recoverable
+exception: ConnectionTimeout
+device: GalaxyWatch-7
+context: scan scheduler handoff to phone sync service
+notes: repeated short waits observed after adapter firmware update
