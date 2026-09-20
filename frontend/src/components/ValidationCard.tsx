@@ -1,0 +1,2 @@
+import type { PlaceholderProps } from '../types'
+export function ValidationCard({ title = 'Validation' }: PlaceholderProps) { return <section className="panel p-5"><div className="flex items-center justify-between"><h2 className="font-semibold text-white">{title}</h2><span className="rounded-full bg-white/[0.06] px-2.5 py-1 text-xs text-muted">Pending</span></div><p className="mt-4 text-sm text-muted">Validation results will be available after a patch is proposed.</p></section> }

@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-**Phase 5 - FastAPI Backend**
+**Phase 6A - One UI Frontend Foundation**
 
 ## Completed
 
@@ -30,7 +30,12 @@
   error responses and automatic Swagger documentation at `/docs`.
 - Added API contract tests in `tests/test_api.py`; see `docs/API.md` for
   request and response examples.
+- Added the Vite React TypeScript frontend foundation in `frontend/`.
+- Added Tailwind tokens and a Samsung One UI-inspired responsive shell.
+- Added Dashboard and Investigation placeholder pages with reusable
+  investigation components. API integration is intentionally deferred.
 
 ## Next Phase
 
-Phase 6 can build a user interface on top of the API.
+Phase 6B can connect the frontend views to the FastAPI contract. React Flow
+and Framer Motion remain intentionally deferred to Phase 6C.

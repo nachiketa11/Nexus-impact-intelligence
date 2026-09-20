@@ -1,0 +1,2 @@
+import type { PlaceholderProps } from '../types'
+export function EvidenceTrail({ title = 'Evidence trail' }: PlaceholderProps) { return <section className="panel p-5"><h2 className="font-semibold text-white">{title}</h2><div className="mt-5 rounded-2xl border border-dashed border-white/10 p-6 text-center text-sm text-muted">Evidence collected during an investigation will be displayed here.</div></section> }
