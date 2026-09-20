@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-**Phase 2 - Simulated Samsung Ecosystem**
+**Phase 3 - Code Intelligence Engine**
 
 ## Completed
 
@@ -17,8 +17,11 @@
   SmartThings device bridging.
 - Added the Bluetooth timeout defect, diagnostic logs, architecture
   documentation, tests, and simulated commit histories.
+- Added Tree-sitter Python parsing for functions, classes, imports, and calls.
+- Added function-level chunks and JSON metadata indexing.
+- Added a NetworkX dependency graph with import/call edges and BFS traversal.
 
 ## Next Phase
 
-Phase 3 should implement repository parsing that discovers the cross-repository
-dependencies and diagnostic evidence from these seeded repositories.
+Phase 4 can build on the parser and graph artifacts to add diagnostic evidence,
+retrieval, and impact analysis workflows.
