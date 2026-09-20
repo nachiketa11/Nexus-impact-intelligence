@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-**Phase 3 - Code Intelligence Engine**
+**Phase 4 - Agentic Code Intelligence**
 
 ## Completed
 
@@ -20,8 +20,12 @@
 - Added Tree-sitter Python parsing for functions, classes, imports, and calls.
 - Added function-level chunks and JSON metadata indexing.
 - Added a NetworkX dependency graph with import/call edges and BFS traversal.
+- Added a LangGraph workflow with Planner, Code Intelligence, Diagnosis, and
+  Fix & Validation agents.
+- Added an append-only structured Evidence Trail and a single replan loop.
+- Added the seeded Bluetooth workflow demo at `backend/demo_agent.py`.
 
 ## Next Phase
 
-Phase 4 can build on the parser and graph artifacts to add diagnostic evidence,
-retrieval, and impact analysis workflows.
+Phase 5 can expose the review-ready patch and validation artifacts through a
+backend or user interface.
