@@ -3,3 +3,5 @@ pytest==8.3.5
 tree-sitter==0.23.2
 tree-sitter-python==0.23.6
 langgraph==0.2.53
+fastapi==0.115.6
+httpx==0.28.1

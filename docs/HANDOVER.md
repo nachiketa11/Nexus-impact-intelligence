@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-**Phase 4 - Agentic Code Intelligence**
+**Phase 5 - FastAPI Backend**
 
 ## Completed
 
@@ -24,8 +24,13 @@
   Fix & Validation agents.
 - Added an append-only structured Evidence Trail and a single replan loop.
 - Added the seeded Bluetooth workflow demo at `backend/demo_agent.py`.
+- Added a production-quality FastAPI surface at `backend/app.py`, with thin
+  routes, typed Pydantic schemas, and service-layer orchestration.
+- Added `/health`, `/graph`, and `/bug` endpoints with consistent demo-safe
+  error responses and automatic Swagger documentation at `/docs`.
+- Added API contract tests in `tests/test_api.py`; see `docs/API.md` for
+  request and response examples.
 
 ## Next Phase
 
-Phase 5 can expose the review-ready patch and validation artifacts through a
-backend or user interface.
+Phase 6 can build a user interface on top of the API.
