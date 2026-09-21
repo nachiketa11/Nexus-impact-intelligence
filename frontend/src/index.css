@@ -23,6 +23,39 @@ body {
     #0b0f17;
 }
 
+.command-hero {
+  position: relative;
+  min-height: min(690px, calc(100vh - 110px));
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2.5rem;
+  padding: 4rem clamp(1.5rem, 5vw, 5.5rem);
+  background: radial-gradient(circle at 72% 45%, rgba(45, 103, 255, 0.3), transparent 25rem), linear-gradient(120deg, #0d1628, #0b0f17 65%);
+}
+
+.command-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(11,15,23,.92), transparent 62%), repeating-linear-gradient(90deg, transparent 0 79px, rgba(122,165,255,.035) 80px); }
+.hero-canvas { position: absolute; inset: 0 0 0 38%; z-index: 1; }
+.hero-gradient { background: linear-gradient(110deg, #dbe8ff, #5b8cff 55%, #a9c4ff); background-clip: text; color: transparent; }
+.hero-cta { display: inline-flex; align-items: center; gap: 1.5rem; border-radius: 999px; background: #5b8cff; padding: 1rem 1.45rem 1rem 1.7rem; color: white; font-size: .85rem; font-weight: 700; box-shadow: 0 12px 35px rgba(91,140,255,.3); transition: transform .2s, background .2s; }
+.hero-cta:hover { transform: translateY(-2px); background: #7aa5ff; }
+.hero-cta:disabled { opacity: .65; }
+.hero-cta span { display: grid; height: 1.7rem; width: 1.7rem; place-items: center; border-radius: 50%; background: rgba(255,255,255,.2); }
+.status-pulse { height: .45rem; width: .45rem; border-radius: 50%; background: #5bffb0; box-shadow: 0 0 0 .25rem rgba(91,255,176,.1); }
+.hero-orbit-label { position: absolute; z-index: 2; font-size: .55rem; letter-spacing: .18em; color: #a9c4ff; line-height: 1.6; }
+.hero-orbit-label span { color: #687a9f; }
+.hero-orbit-label-phone { right: 39%; top: 23%; }
+.hero-orbit-label-watch { right: 10%; top: 38%; }
+.hero-orbit-label-hub { right: 35%; bottom: 17%; }
+
+@media (max-width: 767px) {
+  .command-hero { min-height: 680px; align-items: flex-start; padding-top: 3rem; }
+  .hero-canvas { inset: 34% -12% 0 -10%; opacity: .8; }
+  .command-hero::after { background: linear-gradient(180deg, rgba(11,15,23,.9) 18%, transparent 70%); }
+  .hero-orbit-label { display: none; }
+}
+
 button,
 input,
 textarea {
