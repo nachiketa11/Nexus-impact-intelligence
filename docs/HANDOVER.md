@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-**Phase 6A - One UI Frontend Foundation**
+**Phase 6B - FastAPI frontend integration**
 
 ## Completed
 
@@ -34,8 +34,12 @@
 - Added Tailwind tokens and a Samsung One UI-inspired responsive shell.
 - Added Dashboard and Investigation placeholder pages with reusable
   investigation components. API integration is intentionally deferred.
+- Added typed frontend services for `/health`, `/graph`, and `/bug`.
+- Added loading, success, and backend error-envelope handling through
+  `useHealth`, `useGraph`, and `useBugAnalysis`.
+- Connected the Dashboard and Investigation views to live backend data,
+  including the sequential Samsung demo stages.
 
 ## Next Phase
 
-Phase 6B can connect the frontend views to the FastAPI contract. React Flow
-and Framer Motion remain intentionally deferred to Phase 6C.
+React Flow and Framer Motion remain intentionally deferred to Phase 6C.

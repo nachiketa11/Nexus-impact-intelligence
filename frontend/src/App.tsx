@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { Dashboard } from './pages/Dashboard'
 import { Investigation } from './pages/Investigation'
 import type { Page } from './types'
+import { useHealth } from './hooks/useHealth'
+import { useBugAnalysis } from './hooks/useBugAnalysis'
+import { StatusIndicator } from './components/StatusIndicator'
 
 const navigation: { id: Page; label: string; icon: string }[] = [
   { id: 'dashboard', label: 'Dashboard', icon: '⌂' },
@@ -10,6 +13,8 @@ const navigation: { id: Page; label: string; icon: string }[] = [
 
 function App() {
   const [page, setPage] = useState<Page>('dashboard')
+  const health = useHealth()
+  const analysis = useBugAnalysis()
 
   return (
     <div className="min-h-screen lg:flex">
@@ -19,6 +24,7 @@ function App() {
             <p className="text-xl font-bold tracking-[0.2em] text-white">NEXUS</p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.22em] text-muted">Impact Intelligence</p>
           </div>
+          <StatusIndicator {...health} onRetry={() => void health.check()} />
           <div className="flex h-9 w-9 items-center justify-center rounded-full border border-samsung/30 bg-samsung/10 text-samsung lg:mt-10">✦</div>
         </div>
         <nav className="mt-6 flex gap-2 overflow-x-auto lg:mt-12 lg:block lg:space-y-2">
@@ -42,7 +48,7 @@ function App() {
         </div>
       </aside>
       <main className="w-full px-5 py-7 sm:px-8 lg:ml-64 lg:px-12 lg:py-10 xl:px-16">
-        {page === 'dashboard' ? <Dashboard onOpenInvestigation={() => setPage('investigation')} /> : <Investigation />}
+        {page === 'dashboard' ? <Dashboard onOpenInvestigation={() => setPage('investigation')} analysis={analysis} /> : <Investigation analysis={analysis} />}
       </main>
     </div>
   )
